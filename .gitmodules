@@ -1,0 +1,9 @@
+[submodule "pwr9-api"]
+	path = pwr9-api
+	url = https://github.com/malexanderboyd/pwr9-api.git
+[submodule "pwr9-ui"]
+	path = pwr9-ui
+	url = https://github.com/malexanderboyd/pwr9-ui.git
+[submodule "pwr9-godr4ft"]
+	path = pwr9-godr4ft
+	url = https://github.com/malexanderboyd/pwr9-godr4ft.git
