@@ -1,12 +1,12 @@
 [submodule "pwr9-api"]
 	path = pwr9-api
-	url = https://github.com/malexanderboyd/pwr9-api.git
+	url = git@github.com:malexanderboyd/pwr9-api.git
 	branch = master
 [submodule "pwr9-ui"]
 	path = pwr9-ui
-	url = https://github.com/malexanderboyd/pwr9-ui.git
+	url = git@github.com:malexanderboyd/pwr9-ui.git
 	branch = react
 [submodule "pwr9-godr4ft"]
 	path = pwr9-godr4ft
-	url = https://github.com/malexanderboyd/pwr9-godr4ft.git
+	url = git@github.com:malexanderboyd/pwr9-godr4ft.git
 	branch = master
