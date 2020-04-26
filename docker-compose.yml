@@ -5,7 +5,7 @@ services:
       context: pwr9-ui
       dockerfile: Dockerfile
     ports:
-    - "8001:80"
+    - "80:80"
     environment:
       PORT: 80
     networks:

@@ -62,7 +62,7 @@ while True:
             "pwr9/godr4ft",
             f"/main -port={game_port} -gameId={game_id}",
             ports={f"{game_port}/tcp": game_port},
-            environment=dict(NODE_ENV="dev"),
+            environment=dict(NODE_ENV="docker"),
             name=container_name,
             network="pwr9_pwr9",
             detach=True,
