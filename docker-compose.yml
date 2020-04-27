@@ -15,15 +15,25 @@ services:
       context: pwr9-ui
       dockerfile: Dockerfile
     ports:
-    - "8001:8001"
+    - "8001:80"
     environment:
-      PORT: 8001
+      PORT: 80
     networks:
       - pwr9
   cache:
     image: redis:5-buster
     ports:
       - "6379:6379"
+    networks:
+      - pwr9
+  warm_cache:
+    depends_on:
+      - cache
+    build:
+      context: pwr9-api
+      dockerfile: Dockerfile-warm
+    environment:
+      REDIS_URL: cache
     networks:
       - pwr9
   api:
