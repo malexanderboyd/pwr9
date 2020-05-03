@@ -5,7 +5,7 @@
 [submodule "pwr9-ui"]
 	path = pwr9-ui
 	url = https://github.com/malexanderboyd/pwr9-ui.git
-	branch = controller
+	branch = react
 [submodule "pwr9-godr4ft"]
 	path = pwr9-godr4ft
 	url = https://github.com/malexanderboyd/pwr9-godr4ft.git
