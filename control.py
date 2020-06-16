@@ -46,7 +46,7 @@ config = Configuration(
 )
 
 queue = Queue(config=config)
-
+print("Starting Game queue")
 while True:
     try:
         new_game_data = queue.dequeue()
@@ -63,7 +63,7 @@ while True:
             f"/main -port={game_port} -gameId={game_id}",
             ports={f"{game_port}/tcp": game_port},
             environment=dict(NODE_ENV="docker"),
-            name=container_name,
+            name=f"game_server_{game_port}",
             network="pwr9_pwr9",
             detach=True,
         )
